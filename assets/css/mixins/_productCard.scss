@@ -1,0 +1,190 @@
+@mixin card($marginBottom , $isOnSale: false , $isRecent: false , $badgeColor:"") {
+    .cardwrapper {
+        background-color: #fff;
+        margin-bottom: $marginBottom;
+        cursor: pointer;
+        box-shadow: 0 0 15px rgba(0,0,0,.08);
+        border: 1px solid #eee;
+        .imgwrapper {
+            overflow: hidden;
+            border-radius: 5px;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            position: relative;
+            max-height: 200px;
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: -30px;
+                width: 30px;
+                height: 100%;
+                background-color: rgba(255, 255, 255, 0.15);
+                transition: all 0.25s;
+                z-index: 10;
+            }
+            img {
+                width: 100%;
+                transition: all 0.25s;
+                height: 200px;
+            }
+            .action--wrapper {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: -60px;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding-right: 10px;
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.25s;
+                a {
+                    width: 35px;
+                    height: 35px;
+                    border-radius: 100%;
+                    background-color: #fff;
+                    color:$mainColor;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 8px;
+                    transition: all 0.25s;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    &:hover {
+                        background-color: $mainColor;
+                        color:#fff;
+                    }
+                }
+            }
+            &:hover .action--wrapper {
+                right: 0;
+                opacity: 1;
+                visibility: visible;
+            }
+            @if ($isRecent) {
+                .badge {
+                    position: absolute;
+                    top: 6px;
+                    left: 6px;
+                    padding: 5px 6px;
+                    color:#fff;
+                    font-size: 12px;
+                    font-weight: 600;
+                    text-align: center;
+                    background: $badgeColor;
+                    border-radius: 3px;
+                }
+            } @else if ($isOnSale) {
+                .badge {
+                    position: absolute;
+                    top: 6px;
+                    left: 6px;
+                    padding: 5px 6px;
+                    color:#fff;
+                    font-size: 12px;
+                    font-weight: 600;
+                    text-align: center;
+                    background: $badgeColor;
+                    border-radius: 3px;
+                }
+            }
+        }
+        .infowrapper {
+            padding: 12px 10px;
+            text-align: center;
+            .star-rating {
+                position: relative;
+                margin-bottom: 8px;
+                .star {
+                    width: 15px;
+                    height: 15px;
+                    position: relative;
+                    &::before {
+                        content: "\f005";
+                        font-family: "Font Awesome 5 Free";
+                        font-weight: 400;
+                        color: #fbcb3a;
+                        font-size: 13px;
+                    }
+                    &.checked::before {
+                        content: "\f005";
+                        font-family: "Font Awesome 5 Free";
+                        font-weight: 900;
+                        color: #fbcb3a;
+                        font-size: 13px;
+                    }
+                }
+                .comment {
+                    font-size: 13px;
+                    color: #5b6c8f;
+                }
+            }
+            h5 {
+                font-size: 16px;
+                font-weight: 500;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+            }
+            .price {
+                margin-bottom: 12px;
+                span.current {
+                    font-size: 18px;
+                    color: $secondColor;
+                    margin-right: 6px;
+                    font-weight: 500;
+                }
+                @if ($isOnSale) {
+                    span.prev {
+                        font-size: 14px;
+                        color: #aaa;
+                        text-decoration: line-through;
+                    }
+                }
+            }
+            .by-label {
+                font-size: 13px;
+                color: #292932ab;
+                display: -webkit-box;
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+                font-weight: 500;
+                overflow: hidden;
+                span:first-child {
+                    color:#000;
+                    margin-right: 4px;
+                }
+            }
+            .button--wrapper {
+                text-align: center;
+                .btn {
+                    padding:7px 15px;
+                    color: $mainColor;
+                    border:1px solid $mainColor;
+                    border-radius: 25px;
+                    background-color: #fff;
+                    font-size: 13px;
+                    font-weight: 600;
+                    transition: all 0.25s;
+                    &:hover {
+                        background-color: $mainColor;
+                        color:#fff;
+                        box-shadow: 0 0 15px rgba(0,0,0,.15);
+                    }
+                }
+            }
+        }
+        &:hover .imgwrapper::before {
+            left: calc(100% + 30px);
+        }
+        &:hover .imgwrapper img {
+            transform: scale(1.1);
+        }
+    }
+}

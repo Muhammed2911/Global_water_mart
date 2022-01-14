@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Global Water Mart - Add Company</title>
+        <!-- Inmporting Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap" />
+        <link rel="icon" type="image/x-icon" href="assets/media/favicon.png" />
+        <!-- Inmporting Css Files -->
+        <link rel="stylesheet" href="assets/plugins/fontawesome/css/fontawesome.min.css" />
+        <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+    </head>
+    <body>
+
+        <!-- start:: preloader -->
+        <section class="preloader">
+            <div class="lds-default"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+        </section>
+        <!-- start:: preloader -->
+
+        <!-- start:: mainnavbar -->
+        <section class="mainnavbar" id="mainnavbar"></section><!-- content comes form js (main.js) -->
+        <!-- end:: mainnavbar -->
+
+        <!-- start:: addcompanywrapper -->
+        <section class="addcompanywrapper">
+            <div class="container-fluid">
+                <div class="form--wrapper">
+                    <h4 class="main--title">Add Your Company Details.</h4>
+                    <form action="" method="" enctype="multipart/form-data">
+                        <div class="row step_wrapper active" data-id="step_1">
+
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <label class="control-label">Company Name :</label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" name="" placeholder="Enter Company Name.." />
+                                    </div>
+                                    <span class="validate--msg text-danger"></span>
+                                </div>
+                            </div><!-- end:: col -->
+
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label class="control-label">Phone Number :</label>
+                                    <div class="input-group">
+                                        <input type="number" class="form-control" name="" placeholder="ex: 0966 14 245 5421" />
+                                    </div>
+                                    <span class="validate--msg text-danger"></span>
+                                </div>
+                            </div><!-- end:: col -->
+
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label class="control-label">Email Address :</label>
+                                    <div class="input-group">
+                                        <input type="email" class="form-control" name="" placeholder="Enter Email Address.." />
+                                    </div>
+                                    <span class="validate--msg text-danger"></span>
+                                </div>
+                            </div><!-- end:: col -->
+
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label class="control-label">Company Field :</label>
+                                    <div class="input-group">
+                                        <select name="" class="form-select" validate data-check="select">
+                                            <option value="none" selected>Select Field...</option>
+                                            <option value="1">Field 1</option>
+                                            <option value="2">Field 2</option>
+                                            <option value="3">Field 3</option>
+                                            <option value="4">Field 4</option>
+                                        </select>
+                                    </div>
+                                    <span class="validate--msg text-danger"></span>
+                                </div>
+                            </div><!-- end:: col -->
+
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label class="control-label">Business Type :</label>
+                                    <div class="input-group">
+                                        <select name="" class="form-select" validate data-check="select">
+                                            <option value="none" selected>Select Type...</option>
+                                            <option value="1">Type 1</option>
+                                            <option value="2">Type 2</option>
+                                            <option value="3">Type 3</option>
+                                            <option value="4">Type 4</option>
+                                        </select>
+                                    </div>
+                                    <span class="validate--msg text-danger"></span>
+                                </div>
+                            </div><!-- end:: col -->
+
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label class="control-label">Country / Region :</label>
+                                    <div class="input-group">
+                                        <select name="" class="form-select" validate data-check="select">
+                                            <option value="none" selected>Select Country...</option>
+                                            <option value="1">Egypt</option>
+                                            <option value="2">Saudi Arabia</option>
+                                        </select>
+                                    </div>
+                                    <span class="validate--msg text-danger"></span>
+                                </div>
+                            </div><!-- end:: col -->
+
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label class="control-label">Year Established :</label>
+                                    <div class="input-group">
+                                        <input type="number" class="form-control" name="" placeholder="Select Year.." validate data-check="normal">
+                                    </div>
+                                    <span class="validate--msg text-danger"></span>
+                                </div>
+                            </div><!-- end:: col -->
+
+                        </div><!-- end:: step_1 -->
+
+                        <div class="row step_wrapper d-none" data-id="step_2">
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <label class="control-label">Choose Categories :</label>
+                                    <div class="choices--wrapper">
+                                        <div class="line">
+                                            <input type="checkbox" name="category" id="cate_1" />
+                                            <label for="cate_1">Hydraulic engineering and well construction</label>
+                                        </div><!-- end:: line -->
+
+                                        <div class="line">
+                                            <input type="checkbox" name="category" id="cate_2" />
+                                            <label for="cate_2">Construction of water and wsatewater treatment plants</label>
+                                        </div><!-- end:: line -->
+
+                                        <div class="line">
+                                            <input type="checkbox" name="category" id="cate_3" />
+                                            <label for="cate_3">Water supply and sewerage systems</label>
+                                        </div><!-- end:: line -->
+
+                                        <div class="line">
+                                            <input type="checkbox" name="category" id="cate_4" />
+                                            <label for="cate_4">Mechanical engineering and plant engineering in water manaement</label>
+                                        </div><!-- end:: line -->
+
+                                        <div class="line">
+                                            <input type="checkbox" name="category" id="cate_5" />
+                                            <label for="cate_5">Refuse management and recycling</label>
+                                        </div><!-- end:: line -->
+                                    </div>
+                                </div>
+                            </div><!-- end:: col -->
+                        </div><!-- end:: step_2 -->
+
+                        <div class="row step_wrapper d-none" data-id="step_3">
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label class="control-label">Upload Company Logo :</label>
+                                    <div class="input-group">
+                                        <input type="file" class="form-control" name="" />
+                                    </div>
+                                </div>
+                            </div><!-- end:: col -->
+
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label class="control-label">Upload Cover Image :</label>
+                                    <div class="input-group">
+                                        <input type="file" class="form-control" name="" />
+                                    </div>
+                                    <span class="validate--msg text-danger"></span>
+                                </div>
+                            </div><!-- end:: col -->
+
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label class="control-label">Upload Company Certifications :</label>
+                                    <div class="input-group">
+                                        <input type="file" class="form-control" name="" multiple />
+                                    </div>
+                                    <span class="text-muted">Can Upload Multiple Files.</span>
+                                </div>
+                            </div><!-- end:: col -->
+
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label class="control-label">Upload Company Photos :</label>
+                                    <div class="input-group">
+                                        <input type="file" class="form-control" name="" multiple />
+                                    </div>
+                                    <span class="text-muted">Can Upload Multiple Files.</span>
+                                </div>
+                            </div><!-- end:: col -->
+
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label class="control-label">Upload Company Videos :</label>
+                                    <div class="input-group">
+                                        <input type="file" class="form-control" name="" multiple />
+                                    </div>
+                                    <span class="text-muted">Can Upload Multiple Files.</span>
+                                </div>
+                            </div><!-- end:: col -->
+                        </div><!-- end:: step_3 -->
+
+                        <div class="row step_wrapper d-none" data-id="step_4">
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label class="control-label">Facebook :</label>
+                                    <div class="input-group">
+                                        <input type="url" class="form-control" name="" placeholder="ex: https://www.facebook.com" />
+                                    </div>
+                                </div>
+                            </div><!-- end:: col -->
+
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label class="control-label">Twitter :</label>
+                                    <div class="input-group">
+                                        <input type="url" class="form-control" name="" placeholder="ex: https://www.twitter.com" />
+                                    </div>
+                                </div>
+                            </div><!-- end:: col -->
+
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label class="control-label">linkedin :</label>
+                                    <div class="input-group">
+                                        <input type="url" class="form-control" name="" placeholder="ex: https://www.linkedin.com" />
+                                    </div>
+                                </div>
+                            </div><!-- end:: col -->
+
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label class="control-label">Company Website :</label>
+                                    <div class="input-group">
+                                        <input type="url" class="form-control" name="" placeholder="ex: https://www.website.com" />
+                                    </div>
+                                </div>
+                            </div><!-- end:: col -->
+                        </div><!-- end:: step_4 -->
+
+                        <div class="button--wrapper">
+                            <button type="button" class="btn btn-default" data-action="nextButton"><i class="fas fa-long-arrow-alt-left"></i> <span>Next Step</span></button>
+                            <button type="submit" class="btn btn-default d-none" data-action="submitForm"><i class="fas fa-check"></i> <span>Add Company</span></button>
+                            <button type="button" class="btn btn-default" disabled="disabled" data-action="prevButton"> <span>Previous Step</span> <i class="fas fa-long-arrow-alt-right"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- end:: addcompanywrapper -->
+
+        <!-- start:: footermainwrapper -->
+        <footer class="footermainwrapper" id="footer"></footer><!-- content comes form js (main.js) -->
+        <!-- end:: footermainwrapper -->
+
+        <!-- Importing Js Files -->
+        <script src="assets/plugins/jquery/jquery.js"></script>
+        <script src="assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/plugins/fontawesome/js/fontawesome.min.js"></script>
+        <script src="assets/plugins/owlCarousel/js/owl.carousel.min.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/init/add-company.init.js"></script>
+    </body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Global Water Mart - Support Tickets</title>
+        <!-- Inmporting Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap" />
+        <link rel="icon" type="image/x-icon" href="assets/media/favicon.png" />
+        <!-- Inmporting Css Files -->
+        <link rel="stylesheet" href="assets/plugins/fontawesome/css/fontawesome.min.css" />
+        <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="assets/plugins/dataTables/css/dataTables.bootstrap5.min.css" />
+        <link rel="stylesheet" href="assets/plugins/dataTables/css/jquery.dataTables.min.css" />
+        <link rel="stylesheet" href="assets/plugins/dataTables/css/datatables.min.css" />
+        <link rel="stylesheet" href="assets/plugins/dataTables/css/custom.datatables.css" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+    </head>
+    <body>
+
+        <!-- start:: preloader -->
+        <section class="preloader">
+            <div class="lds-default"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+        </section>
+        <!-- start:: preloader -->
+
+        <!-- start:: mainnavbar -->
+        <section class="mainnavbar" id="mainnavbar"></section><!-- content comes form js (main.js) -->
+        <!-- end:: mainnavbar -->
+
+        <!-- start:: ticketsmainwrapper -->
+        <section class="ticketsmainwrapper">
+            <div class="container-fluid">
+                <div class="section--wrapper">
+                    <div class="card--header flex--header">
+                        <h4>Support Tickets</h4>
+                        <button type="button" class="btn btn-default" data-bs-toggle="modal" data-bs-target="#newTicket"><i class="fas fa-plus"></i> <span>Add New Ticket</span></button>
+                        <!-- start:: newTicket -->
+                        <div class="modal fade" id="newTicket">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Open New Ticket</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+
+                                    <form action="">
+                                        <div class="modal-body">
+                                            <div class="form-group">
+                                                <label class="control-label">Title :</label>
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control" name="" placeholder="Enter Ticket Title.." />
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="control-label">Message :</label>
+                                                <div class="input-group">
+                                                    <textarea name="" rows="5" class="form-control" placeholder="Enter Ticket Message..."></textarea>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <button type="submit" class="btn btn-default">Submit</button>
+                                            </div>
+                                        </div>
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end:: newTicket -->
+                    </div>
+                    <table class="table table-bordered" data-trigger="datatable_1" style="width:100%">
+                        <thead>
+                            <tr>
+                                <th>Title</th>
+                                <th>Status</th>
+                                <th>Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Change of ownership</td>
+                                <td><span class="close--label">Closed</span></td>
+                                <td><span>22-03-2021 - 03:00 PM</span></td>
+                            </tr>
+                            <tr>
+                                <td>Credit card payment error</td>
+                                <td><span class="pending--label">Pending</span></td>
+                                <td><span>22-03-2021 - 03:00 PM</span></td>
+                            </tr>
+                            <tr>
+                                <td>Upgrade question</td>
+                                <td><span class="solved--label">Solved</span></td>
+                                <td><span>22-03-2021 - 03:00 PM</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <!-- end:: ticketsmainwrapper -->
+
+        <!-- start:: footermainwrapper -->
+        <footer class="footermainwrapper" id="footer"></footer><!-- content comes form js (main.js) -->
+        <!-- end:: footermainwrapper -->
+
+        <!-- Importing Js Files -->
+        <script src="assets/plugins/jquery/jquery.js"></script>
+        <script src="assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/plugins/fontawesome/js/fontawesome.min.js"></script>
+        <script src="assets/plugins/owlCarousel/js/owl.carousel.min.js"></script>
+        <script src="assets/plugins/dataTables/js/datatables.min.js"></script>
+        <script src="assets/plugins/dataTables/js/dataTables.bootstrap5.min.js"></script>
+        <script src="assets/plugins/dataTables/js/jquery.dataTables.min.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script>
+            let table = $('[data-trigger="datatable_1"]').DataTable({
+                responsive: true,
+                "bLengthChange": true,
+                "pageLength": 10,
+                "bFilter":  true,
+                "bInfo": true,
+            });
+        </script>
+    </body>
+</html>

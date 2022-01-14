@@ -1,0 +1,113 @@
+<!-- start:: res_navbar -->
+<div class="res_topnavbar">
+    <div class="container-fluid">
+        <div class="dropdown-option">
+            <a href="javascript:;"> Language: English <i class="fas fa-angle-down"></i></a>
+            <div class="dropdown-wrapper">
+                <a href="javascript:;">English</a>
+                <a href="javascript:;">Arabic</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="res_navbar">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+
+            <div class="col-5">
+                <div class="logo-block">
+                    <a href="index.html"><img src="assets/media/res-logo.png" alt="logo" /></a>
+                </div>
+            </div><!-- end:: col -->
+
+            <div class="col-7">
+                <div class="button--wrapper">
+                    <button type="button" class="btn btn-link"><i class="fas fa-user-shield"></i></button>
+                    <button type="button" class="btn btn-link" data-trigger="trigger--sidebar"><i class="fas fa-list-ul"></i><span class="title sr-only">Menu</span></button>
+                </div>
+            </div><!-- end:: col -->
+
+        </div><!-- end:: row -->
+    </div>
+</div>
+<!-- end:: res_navbar -->
+
+<!-- start:: res_sidebar -->
+<section class="res--sidebar" data-drop="res--sidebar">
+    <div class="header--wrapper">
+        <h5 class="main--title">Primary Menu</h5>
+        <button class="btn btn-default" type="button" data-trigger="close--sidebar">
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+    <div class="accordion" id="main--accordion--1">
+        <div class="accordion-item">
+            <div class="accordion-header">
+                <a href="index.html" class="accordion-button collapsed accordion-n-link">
+                    <span>Home</span>
+                </a>
+            </div>
+        </div>
+        <!-- end:: item -->
+
+        <div class="accordion-item">
+            <div class="accordion-header">
+                <a href="javascript:;" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#main--item1" aria-expanded="false">
+                    <span>Browse Category</span>
+                </a>
+            </div>
+
+            <div id="main--item1" class="accordion-collapse collapse" data-bs-parent="#main--accordion--1">
+                <div class="accordion-body">
+                    <ul>
+                        <li><a href="javascript:;">Refuse management and recycling</a></li>
+                        <li><a href="javascript:;">Construction of water and wastewater treatment plants</a></li>
+                        <li><a href="javascript:;">Water supply and sewerage systems</a></li>
+                        <li><a href="javascript:;">Street cleaning, maintenance and winter road services</a></li>
+                        <li><a href="javascript:;">Refuse management and recycling</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- end:: item -->
+
+        <div class="accordion-item">
+            <div class="accordion-header">
+                <a href="countries.html" class="accordion-button collapsed accordion-n-link">
+                    <span>Countries</span>
+                </a>
+            </div>
+        </div>
+        <!-- end:: item -->
+
+        <div class="accordion-item">
+            <div class="accordion-header">
+                <a href="companies.html" class="accordion-button collapsed accordion-n-link">
+                    <span>Companies</span>
+                </a>
+            </div>
+        </div>
+        <!-- end:: item -->
+
+        <div class="accordion-item">
+            <div class="accordion-header">
+                <a href="javascript:;" class="accordion-button collapsed accordion-n-link">
+                    <span>Magazine</span>
+                </a>
+            </div>
+        </div>
+        <!-- end:: item -->
+
+        <div class="accordion-item">
+            <div class="accordion-header">
+                <a href="javascript:;" class="accordion-button collapsed accordion-n-link">
+                    <span>Contact Us</span>
+                </a>
+            </div>
+        </div>
+        <!-- end:: item -->
+
+    </div>
+</section>
+<section class="res--sidebar--overlay" data-drop="res--sidebar--overlay"></section>
+<!-- end:: res_sidebar -->

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:icalendar-ruby
+CALSCALE:GREGORIAN
+BEGIN:VTIMEZONE
+TZID:Africa/Cairo
+BEGIN:STANDARD
+DTSTART:20140925T230000
+TZOFFSETFROM:+0300
+TZOFFSETTO:+0200
+TZNAME:EET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20211227T181106Z
+UID:b0dc0597-9cc2-4447-87ac-dcf68f6799d7
+DTSTART;TZID=Africa/Cairo:20211229T140000
+DTEND;TZID=Africa/Cairo:20211229T141000
+CLASS:PRIVATE
+DESCRIPTION:Muhammed Samir and Anna Maria Velilla should join this meeting 
+ link: https://topt.al/BVc4nP.\n\nAttendee:\nAnna Maria Velilla (annamaria.
+ velilla@toptal.com)\n\nSubject:\nToptal Initial Interview with Anna Maria 
+ Velilla \n\nWeb Conference URL:\nhttps://topt.al/BVc4nP\n\nSomething came 
+ up and you can't attend? Please reschedule or cancel the meeting:\nhttps:/
+ /www.toptal.com/platform/talent/application_info/edit\n\nCreated by Top Sc
+ heduler\n
+SUMMARY:Call with Anna Maria Velilla from Toptal
+END:VEVENT
+END:VCALENDAR
