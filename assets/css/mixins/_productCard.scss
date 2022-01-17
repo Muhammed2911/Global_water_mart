@@ -124,8 +124,32 @@
                     color: #5b6c8f;
                 }
             }
+            .flex--wrapper {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 12px;
+                .item {
+                    display: flex;
+                    align-items: center;
+                    margin-top: 10px;
+                    &:first-child {
+                        margin-right: 15px;
+                    }
+                    .svg-inline--fa {
+                        font-size: 14px;
+                        color:$mainColor;
+                        margin-right: 8px;
+                    }
+                    span {
+                        color:#808080;
+                        font-size: 13px;
+                        font-weight: 500;
+                    }
+                }
+            }
             h5 {
-                font-size: 16px;
+                font-size: 18px;
                 font-weight: 500;
                 display: -webkit-box;
                 -webkit-line-clamp: 2;
@@ -176,6 +200,14 @@
                         background-color: $mainColor;
                         color:#fff;
                         box-shadow: 0 0 15px rgba(0,0,0,.15);
+                    }
+                    &:last-child {
+                        border-color: $secondColor;
+                        color:$secondColor;
+                    }
+                    &:last-child:hover {
+                        background-color: $secondColor;
+                        color:#fff;
                     }
                 }
             }

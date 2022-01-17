@@ -153,8 +153,8 @@ body {
         background-color: #fff;
         border-bottom: 1px solid #eee;
         & > .container-fluid {
-            padding-left: 100px;
-            padding-right: 100px;
+            padding-left: 50px;
+            padding-right: 50px;
         }
         .logowrapper img {
             width: 260px;
@@ -498,16 +498,22 @@ body {
                     }
                 }
             }
-            .media {
-                color: #102248;
-                display: flex;
-                align-items: center;
-                .media-body {
-                    margin-left: 15px;
-                }
-                .svg-inline--fa {
-                    font-size: 50px;
-                    color: $mainColor;
+            .button--download {
+                .btn {
+                    padding: 12px 25px;
+                    background-color: $secondColor;
+                    color:#000;
+                    font-weight: 600;
+                    font-size: 13px;
+                    border-radius: 25px;
+                    box-shadow: none;
+                    transition: all 0.25s;
+                    span {
+                        margin-left: 4px;
+                    }
+                    &:hover {
+                        box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+                    }
                 }
             }
         }
@@ -515,7 +521,7 @@ body {
             margin-top: 20px;
             padding-top: 25px;
             padding-bottom: 10px;
-            border-top: 1px solid #ddd;
+            border-top: 1px solid #eee;
         }
     }
 }
@@ -759,6 +765,25 @@ body {
         background-color: #0b2153;
         opacity: 0.82;
         z-index: 1;
+    }
+    .partners--slider {
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 10px 20px;
+        .item {
+            background-color: #f8f8f8;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                width: 140px;
+                height: 100px;
+            }
+        }
     }
     .container {
         z-index: 2;
@@ -1621,6 +1646,33 @@ body {
                 color: #5b6c8f;
             }
         }
+        .info--wrapper {
+            .item {
+                display: flex;
+                align-items: center;
+                margin-top: 10px;
+                .svg-inline--fa {
+                    font-size: 14px;
+                }
+                span {
+                    color:#808080;
+                    font-size: 13px;
+                }
+                &:last-child {
+                    margin-bottom: 15px;
+                }
+            }
+            span , a {
+                font-size: 14px;
+                font-weight: 500;
+                color:#000;
+            }
+            .svg-inline--fa {
+                font-size: 16px;
+                color:$mainColor;
+                margin-right: 8px;
+            }
+        }
         .desc {
             font-size: 14px;
             font-weight: 400;
@@ -1665,29 +1717,9 @@ body {
                 font-weight: 600;
                 margin-bottom: 12px;
                 border: 1px solid $mainColor;
+                background-color: transparent;
+                color:$mainColor;
                 box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
-                &:first-child {
-                    background-color: $mainColor;
-                    color:#fff;
-                }
-                &:nth-child(2) , &:nth-child(3) {
-                    background-color: transparent;
-                    color:$mainColor;
-                }
-                &:last-child {
-                    border-color: transparent;
-                    color:$mainColor;
-                    box-shadow: none;
-                    &:hover {
-                        box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
-                        background-color: $mainColor;
-                        color:#fff;
-                    }
-                    &:active {
-                        background-color: #0895c5;
-                        color:#fff;
-                    }
-                }
                 &:hover {
                     background-color: $mainColor;
                     color:#fff;
@@ -2096,7 +2128,7 @@ body {
 
 // start:: companyprofilewrapper
 .companyprofilewrapper {
-    padding: 50px 100px;
+    padding: 50px;
     background-color: #fff;
     position: relative;
     .company--header {
@@ -2585,7 +2617,7 @@ body {
 
 // start:: allcompanieswrapper
 .allcompanieswrapper {
-    padding: 50px 100px;
+    padding: 50px;
     background-color: #eee;
     position: relative;
     .main--button--wrapper {
@@ -3156,7 +3188,7 @@ body {
                 h5 {
                     font-size:18px;
                     font-weight: 500;
-                    margin-bottom: 12px;
+                    margin-bottom: 8px;
                 }
                 p {
                     margin-bottom: 8px;
@@ -3214,7 +3246,7 @@ body {
 
 // start:: countrydetailswrapper
 .countrydetailswrapper {
-    padding: 50px 100px;
+    padding: 50px;
     background-color: #eee;
     position: relative;
     // Include Filter_Sidebar Styles
@@ -3742,7 +3774,7 @@ body {
 
 // start:: topcompanieswrapper
 .topcompanieswrapper , .featuredcompanieswrapper {
-    padding: 50px 100px;
+    padding: 50px;
     background-color: #eee;
     position: relative;
     // Include Filter_Sidebar Styles
@@ -4076,109 +4108,6 @@ body {
     }
 }
 // end:: ticketsmainwrapper
-
-// start:: addcompanywrapper
-.addcompanywrapper {
-    padding: 50px 100px;
-    background-color: #eee;
-    position: relative;
-    .form--wrapper {
-        width: 70%;
-        margin: 0 auto;
-        background-color: #fff;
-        border-radius: 5px;
-        box-shadow: 0 0 15px rgba(0, 0, 0, 0.09);
-        padding:30px 32px;
-        .main--title {
-            font-style: 22px;
-            font-weight: 600;
-            position: relative;
-            padding-left: 20px;
-            margin-bottom: 30px;
-            &::before {
-                content:'';
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 4px;
-                height: 100%;
-                background-color: $mainColor;
-            }
-        }
-        .form-group {
-            margin-bottom: 20px;
-            position: relative;
-            .control-label {
-                font-size: 15px;
-                font-weight: 500;
-                margin-bottom: 8px;
-                display: block;
-            }
-            .form-control , .form-select {
-                padding: 12px 15px;
-                font-size: 14px;
-                box-shadow: none;
-                transition: all 0.25s;
-                &:focus {
-                    border-color: $mainColor;
-                }
-            }
-            .text-muted {
-                font-size: 13px;
-                font-weight: 400;
-                display: block;
-                margin-top: 4px;
-                margin-left: 5px;
-            }
-            .choices--wrapper {
-                margin-top: 18px;
-                padding-left: 12px;
-                .line {
-                    margin-bottom: 10px;
-                    &:last-child {
-                        margin-bottom: 0;
-                    }
-                    label {
-                        font-size: 14px;
-                        font-weight: 500;
-                        margin-left: 8px;
-                    }
-                    input {
-                        transform: translateY(2px);
-                    }
-                }
-            }
-        }
-        .button--wrapper {
-            padding-top: 20px;
-            margin-top: 25px;
-            border-top: 1px solid #ddd;
-            text-align: center;
-            .btn {
-                padding: 10px 20px;
-                box-shadow: 0 0 12px rgba(0, 0, 0, 0.09);
-                font-size:14px;
-                color:#fff;
-                font-weight: 500;
-                min-width: 140px;
-            }
-            .btn[data-action="nextButton"] , .btn[data-action="submitForm"]{
-                background-color: $mainColor;
-                span {
-                    margin-left: 5px;
-                }
-            }
-            .btn[data-action="prevButton"] {
-                background-color: #ddd;
-                color:#000;
-                span {
-                    margin-right: 5px;
-                }
-            }
-        }
-    }
-}
-// end:: addcompanywrapper
 
 // start:: accountwrapper
 .accountwrapper {
@@ -4947,9 +4876,41 @@ body {
 
 // start:: login--wrapper
 .login--wrapper {
-    @include formwrapper(20px 70px, $isRegister: false)
+    padding:50px 100px;
+    .box--title {
+        margin-bottom: 45px;
+        width: 100%;
+        h2 {
+            font-size: 32px;
+            font-weight: 800;
+        }
+        p {
+            font-size: 16px;
+            font-weight: 700;
+        }
+    }
+    @include formwrapper(35px 50px, $isRegister: false)
 }
 // end:: login--wrapper
+
+// start:: register--wrapper
+.register--wrapper {
+    padding:50px 100px;
+    .box--title {
+        margin-bottom: 45px;
+        width: 100%;
+        h2 {
+            font-size: 32px;
+            font-weight: 800;
+        }
+        p {
+            font-size: 16px;
+            font-weight: 700;
+        }
+    }
+    @include formwrapper(35px 50px, $isRegister: false)
+}
+// end:: register--wrapper
 
 // Importing Responsive Files 
 @import "_responsive.scss";
