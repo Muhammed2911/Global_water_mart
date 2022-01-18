@@ -7614,7 +7614,7 @@ body {
 }
 
 .mycompanywrapper {
-  padding: 50px 100px;
+  padding: 50px;
   background-color: #eee;
   position: relative;
 }
@@ -7647,8 +7647,38 @@ body {
   width: 100%;
   height: 100%;
 }
-.mycompanywrapper .panel--wrapper .tabs--wrapper {
-  padding-top: 55px;
+.mycompanywrapper .panel--wrapper .info--wrapper {
+  padding-top: 50px;
+  padding-bottom: 15px;
+}
+.mycompanywrapper .panel--wrapper .info--wrapper .company-title {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+.mycompanywrapper .panel--wrapper .info--wrapper .flex--wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.mycompanywrapper .panel--wrapper .info--wrapper .flex--wrapper .item {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.mycompanywrapper .panel--wrapper .info--wrapper .flex--wrapper .item:first-child {
+  margin-right: 15px;
+}
+.mycompanywrapper .panel--wrapper .info--wrapper .flex--wrapper .item .svg-inline--fa {
+  font-size: 14px;
+  color: #09a5db;
+  margin-right: 8px;
+}
+.mycompanywrapper .panel--wrapper .info--wrapper .flex--wrapper .item span {
+  color: #808080;
+  font-size: 13px;
+  font-weight: 500;
 }
 .mycompanywrapper .panel--wrapper .tabs--wrapper ul {
   flex-direction: column;
@@ -7660,6 +7690,9 @@ body {
 }
 .mycompanywrapper .panel--wrapper .tabs--wrapper ul li:last-child {
   border-bottom: none;
+}
+.mycompanywrapper .panel--wrapper .tabs--wrapper ul li:first-child {
+  border-top: 1px solid #eee;
 }
 .mycompanywrapper .panel--wrapper .tabs--wrapper ul a {
   font-size: 14px;
@@ -8230,6 +8263,37 @@ body {
 }
 .mycompanywrapper .maincontentwrapper .card--wrapper.company-requests .table-responsive table td:first-child {
   text-align: left;
+}
+.mycompanywrapper .maincontentwrapper .card--wrapper.company-requests .table-responsive table td .btn {
+  padding: 5px 12px;
+  background-color: #09a5db;
+  box-shadow: none;
+  color: #fff;
+}
+.mycompanywrapper .maincontentwrapper .card--wrapper.company-requests .table-responsive table td .btn:active {
+  background-color: #0895c5;
+}
+.mycompanywrapper .maincontentwrapper .card--wrapper.company-requests .table-responsive .modal .form-control {
+  font-size: 14px;
+  box-shadow: none;
+}
+.mycompanywrapper .maincontentwrapper .card--wrapper.company-requests .table-responsive .modal .form-control:focus {
+  border-color: #09a5db;
+}
+.mycompanywrapper .maincontentwrapper .card--wrapper.company-requests .table-responsive .modal .button--wrapper {
+  text-align: center;
+  margin-top: 20px;
+}
+.mycompanywrapper .maincontentwrapper .card--wrapper.company-requests .table-responsive .modal .button--wrapper .btn {
+  padding: 10px 25px;
+  background-color: #09a5db;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: none;
+}
+.mycompanywrapper .maincontentwrapper .card--wrapper.company-requests .table-responsive .modal .button--wrapper .btn:active {
+  background-color: #0895c5;
 }
 .mycompanywrapper .maincontentwrapper .card--wrapper.company--cert .cardwrapper {
   position: relative;
