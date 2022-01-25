@@ -87,13 +87,13 @@
                     margin-bottom: 25px;
                     position: relative;
                     &.otp--input {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
+                        display: flex !important;
+                        justify-content: center !important;
+                        align-items: center !important;
                         .form-control {
                             margin-left: 10px;
                             text-align: center !important;
-                            border-color: #bad557;
+                            border-color: $secondColor;
                             font-size: 18px;
                             font-weight: 400;
                             width: 70px;

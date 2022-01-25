@@ -2783,7 +2783,7 @@ body {
 }
 
 .footermainwrapper .bottom--footer .logo--block img {
-  width: 220px;
+  width: 250px;
 }
 
 .footermainwrapper .bottom--footer .logo--block .contact--list {
@@ -10468,21 +10468,21 @@ body {
 }
 
 .login--wrapper .action--box .flex--box .form--wrapper .form-group.otp--input {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
 }
 
 .login--wrapper .action--box .flex--box .form--wrapper .form-group.otp--input .form-control {
   margin-left: 10px;
   text-align: center !important;
-  border-color: #bad557;
+  border-color: #F5A93F;
   font-size: 18px;
   font-weight: 400;
   width: 70px;
@@ -10777,21 +10777,21 @@ body {
 }
 
 .register--wrapper .action--box .flex--box .form--wrapper .form-group.otp--input {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
 }
 
 .register--wrapper .action--box .flex--box .form--wrapper .form-group.otp--input .form-control {
   margin-left: 10px;
   text-align: center !important;
-  border-color: #bad557;
+  border-color: #F5A93F;
   font-size: 18px;
   font-weight: 400;
   width: 70px;
