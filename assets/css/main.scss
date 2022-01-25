@@ -4945,5 +4945,25 @@ body {
 }
 // end:: register--wrapper
 
+// start:: termsmainwrapper
+.termsmainwrapper {
+    padding: 50px 200px;
+    background-color: #fff;
+    .main--title {
+        margin-bottom: 20px;
+        h4 {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 15px;
+        }
+    }
+    p {
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 10px;
+        line-height: 28px
+    }
+}
+// end:: termsmainwrapper
+
 // Importing Responsive Files 
 @import "_responsive.scss";

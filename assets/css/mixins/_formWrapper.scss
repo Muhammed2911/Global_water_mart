@@ -2,6 +2,9 @@
     .action--box {
         width: 80%;
         margin: 0 auto;
+        .form-control {
+            box-shadow: none !important;
+        }
         .flex--box {
             display: flex;
             flex-wrap: wrap;
