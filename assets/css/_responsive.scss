@@ -1,10 +1,12 @@
-@media (max-width:991px) {
+@media (max-width: 991px) {
     .mainnavbar {
-        .topnavbar , .welcome--msg {
+        .topnavbar,
+        .welcome--msg {
             display: none;
         }
     }
-    .res_navbar , .res_topnavbar {
+    .res_navbar,
+    .res_topnavbar {
         display: block;
     }
     .headermainwrapper {
@@ -26,7 +28,7 @@
             font-size: 11px;
         }
         .waves {
-            top:calc(100% - 6vh);
+            top: calc(100% - 6vh);
         }
     }
     .storemainwrapper {
@@ -49,7 +51,8 @@
                 padding-bottom: 20px;
                 .cardwrapper {
                     flex-direction: column;
-                    .infowrapper , .imgwrapper {
+                    .infowrapper,
+                    .imgwrapper {
                         width: 100%;
                     }
                     .infowrapper {
@@ -73,7 +76,7 @@
         .flex--wrapper {
             .item {
                 width: 100%;
-            } 
+            }
         }
     }
     .sellingguidewrapper {
@@ -133,5 +136,288 @@
             }
         }
     }
+    .cartmainwrapper {
+        padding: 50px 15px 20px 15px;
+        .card--wrapper {
+            flex-direction: column;
+            padding: 20px 10px;
+            .img--wrapper {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            .info--wrapper {
+                width: 100%;
+                margin-left: 0;
+            }
+        }
+    }
+    .termsmainwrapper {
+        padding: 50px 15px;
+    }
+    .allcategorieswrapper {
+        padding: 50px 15px;
+        .card--header {
+            &.flex--header {
+                flex-wrap: wrap;
+                h4 {
+                    width: 100%;
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+    .categorydetailswrapper {
+        padding: 50px 15px;
+        .divider--title {
+            flex-wrap: wrap;
+            h5 {
+                margin-bottom: 15px;
+            }
+        }
+    }
+    .allcompanieswrapper , .countriesmainwrapper , .countrydetailswrapper {
+        padding: 50px 15px;
+    }
+    .companyprofilewrapper {
+        padding: 50px 15px;
+        .company--header {
+            .company--info {
+                padding: 0 15px 25px 15px;
+                .main--contact {
+                    flex-wrap: wrap;
+                    .item {
+                        flex-wrap: wrap;
+                        margin-bottom: 10px;
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                        .btn {
+                            margin-left: 0;
+                            margin-right: 15px;
+                            margin-bottom: 8px;
+                        }
+                    }
+                }
+            }
+        }
+        .company--overview {
+            .details--table {
+                flex-wrap: wrap;
+                .wrapper {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .comparemainwrapper {
+        padding: 50px 15px;
+        .card--header.flex--header {
+            flex-wrap: wrap;
+            h4 {
+                width: 100%;
+                margin-bottom: 15px;
+            }
+        }
+        .section--wrapper {
+            .flexwrapper {
+                .column {
+                    width: 50%;
+                }
+            }
+        }
+    }
+    .countrydetailswrapper {
+        .cardwrapper {
+            flex-wrap: wrap;
+        }
+        .imgwrapper, .infowrapper {
+            width: 100% !important;
+        }
+        .infowrapper {
+            padding-top: 12px !important;
+            span {
+                width: auto !important;
+                &:last-child {
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+    .editaccountwrapper {
+        padding: 50px 15px;
+        .card--wrapper {
+            width: 100%;
+            padding: 20px 18px;
+            .vertical--form {
+                .form-group {
+                    display: block;
+                    .control-label {
+                        display: block;
+                        margin-bottom: 6px;
+                        padding-left: 0;
+                    }
+                    .input-group {
+                        width: 100%;
+                    }
+                }
+            } 
+        }
+    }
+    .featuredcompanieswrapper {
+        padding: 50px 15px;
+        .category--companies {
+            .flex--wrapper {
+                .section--wrapper {
+                    width: 100%;
+                    .cardwrapper {
+                        flex-wrap: wrap;
+                        .imgwrapper , .infowrapper {
+                            width: 100%;
+                        }
+                        .infowrapper {
+                            padding-top: 10px;
+                            span {
+                                width:  auto !important;
+                                &:last-child {
+                                    margin-left: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .login--wrapper {
+        padding: 50px 15px;
+        .action--box {
+            width: 100%;
+            .flex--box {
+                .v-banner--wrapper, .form--wrapper {
+                    width: 100%;
+                    padding: 35px 25px;
+                }
+            }
+        }
+    }
+    .accountwrapper {
+        padding: 50px 15px;
+        .card--wrapper {
+            width: 100%;
+            .card--body {
+                .body {
+                    .line--block {
+                        .line {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .mycompanywrapper {
+        padding: 50px 15px;
+        .panel--wrapper {
+            margin-bottom: 20px;
+        }
+        .maincontentwrapper {
+            .card--wrapper {
+                .card--body {
+                    .line--block {
+                        .line {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .page--header {
+        padding: 20px 15px;
+    }
+    .productmainwrapper {
+        padding: 0 15px 50px 15px;
+        .product--gallery {
+            .imgwrapper {
+                .nav_view {
+                    img {
+                        height: 90px;
+                    }
+                }
+            }
+        }
+        .product--details--tabbed {
+            .nav-tabs {
+                li {
+                    a {
+                        white-space: nowrap;
+                        font-size: 11px;
+                        font-weight: 700;
+                    }
+                }
+            }
+            .tab-content {
+                .product--videos {
+                    .lightgallery--wrapper {
+                        flex-wrap: wrap;
+                        a {
+                            width: calc(100% / 2 - 15px);
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .recentproductwrapper, .saleproductwrapper {
+        padding: 50px 15px;
+    }
+    .register--wrapper {
+        padding: 50px 15px;
+        .action--box {
+            width: 100%;
+            .flex--box {
+                flex-wrap: wrap;
+                .v-banner--wrapper, .form--wrapper {
+                    width: 100%;
+                }
+                .v-banner--wrapper {
+                    height: 200px;
+                }
+            }
+        }
+    }
+    .ticketsmainwrapper , .topcompanieswrapper {
+        padding: 50px 15px;
+    }
+    .topcompanieswrapper {
+        .category--companies {
+            .flex--wrapper {
+                .section--wrapper {
+                    width: 100%;
+                    .cardwrapper {
+                        flex-wrap: wrap;
+                        .imgwrapper , .infowrapper {
+                            width: 100%;
+                        }
+                        .infowrapper {
+                            padding-top: 10px;
+                            span {
+                                width:  auto !important;
+                                &:last-child {
+                                    margin-left: 8px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
     
+}
+@media (min-width:992px) and (max-width:1100px) {
+    .mainnavbar .topnavbar .navbar_menu a {
+        margin-right: 5px;
+    }
 }

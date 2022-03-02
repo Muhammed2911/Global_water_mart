@@ -74,9 +74,9 @@ table.dataTable>tbody>tr.child ul.dtr-details {
 }
 table.dataTable.dtr-inline.collapsed>tbody>tr>td.dtr-control, 
 table.dataTable.dtr-inline.collapsed>tbody>tr>th.dtr-control {
-    padding-left: 18px;
+    padding-left: 30px;
 }
 table.dataTable.dtr-inline.collapsed>tbody>tr>td.dtr-control:before, 
 table.dataTable.dtr-inline.collapsed>tbody>tr>th.dtr-control:before {
-    left: -5px;
+    left: 6px;
 }
